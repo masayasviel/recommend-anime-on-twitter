@@ -14,6 +14,7 @@ const getAnimeList = ()=>{
 const generateShareMassage = ()=>{
     const tweetUrl = "https://twitter.com/intent/tweet?text=" + 
         encodeURIComponent(
+            "好きなアニメタイトルを5つ挙げて、みんなに好きそうなアニメを教えてもらおう！\n" +
             "私の好きなアニメは……\n" + getAnimeList() + "\n" + pageURI + "\n"
         ) + "&hashtags=私が好きそうなアニメを教えて欲しい" + "&count=none&lang=ja";
     return tweetUrl;
