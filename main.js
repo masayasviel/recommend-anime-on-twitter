@@ -1,4 +1,5 @@
 const tweet = document.getElementById("tweet");
+const pageURI = "https://masayasviel.github.io/recommend-anime-on-twitter/";
 
 const getAnimeList = ()=>{
     const listElement = document.getElementsByClassName("animeList");
@@ -13,7 +14,7 @@ const getAnimeList = ()=>{
 const generateShareMassage = ()=>{
     const tweetUrl = "https://twitter.com/intent/tweet?text=" + 
         encodeURIComponent(
-            "私の好きなアニメは……\n" + getAnimeList() + "\nURI\n"
+            "私の好きなアニメは……\n" + getAnimeList() + "\n" + pageURI + "\n"
         ) + "&hashtags=私が好きそうなアニメを教えて欲しい" + "&count=none&lang=ja";
     return tweetUrl;
 }
