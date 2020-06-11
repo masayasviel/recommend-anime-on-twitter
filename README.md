@@ -1,1 +1,1 @@
-# recommend-anime-on-twitter
+twitterでオススメアニメ聞きやすくしたい
